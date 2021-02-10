@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-import { MainTabParamList, TabOneParamList, TabTwoParamList } from '../types';
+import { ChatParamList, MainTabParamList, TabOneParamList } from '../types';
 
+import ChatScreen from '../screens/ChatScreen';
 // import ChatsScreen from '../screens/ChatsScreen';
 import Colors from '../constants/Colors';
 import { Fontisto } from "@expo/vector-icons";
-import TabTwoScreen from '../screens/TabTwoScreen';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import useColorScheme from '../hooks/useColorScheme';
@@ -39,11 +39,11 @@ export default function MainTabNavigator() {
       />
       <MainTab.Screen
         name="Messages"
-        component={TabTwoNavigator}
+        component={ChatScreen}
       />
       <MainTab.Screen
         name="WeebFriends"
-        component={TabTwoNavigator}
+        component={ChatNavigator}
       />
     </MainTab.Navigator>
   );
@@ -58,24 +58,24 @@ function TabOneNavigator() {
     <TabOneStack.Navigator>
       <TabOneStack.Screen
         name="TabOneScreen"
-        component={TabTwoScreen}
+        component={ChatScreen}
         options={{ headerTitle: 'Tab One Title' }}
       />
     </TabOneStack.Navigator>
   );
 }
 
-const TabTwoStack = createStackNavigator<TabTwoParamList>();
+const ChatStack = createStackNavigator<ChatParamList>();
 
-function TabTwoNavigator() {
+function ChatNavigator() {
   return (
-    <TabTwoStack.Navigator>
-      <TabTwoStack.Screen
-        name="TabTwoScreen"
-        component={TabTwoScreen}
+    <ChatStack.Navigator>
+      <ChatStack.Screen
+        name="ChatScreen"
+        component={ChatScreen}
         options={{ headerTitle: 'Tab Two Title' }}
       />
-    </TabTwoStack.Navigator>
+    </ChatStack.Navigator>
   );
 }
 

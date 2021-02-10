@@ -1,25 +1,26 @@
-const tintColorLight = '#212124';
-const tintColorDark = '#fff';
+const gray = '#212124';
+const white = '#fff';
+const green = '#7AC079';
 
 export default {
   nice_dark: {
-    background: '#212124'
+    background: gray
   },
   nice_green: {
-    background: '#7AC079'
+    background: green
   },
   light: {
-    text: '#7AC079',
-    background: '#212124',
-    tint: tintColorLight,
+    text: green,
+    background: white,
+    tint: gray,
     tabIconDefault: '#ccc',
-    tabIconSelected: tintColorLight,
+    tabIconSelected: gray,
   },
   dark: {
-    text: '#7AC079',
-    background: '#000',
-    tint: tintColorDark,
+    text: green,
+    background: gray,
+    tint: white,
     tabIconDefault: '#ccc',
-    tabIconSelected: tintColorDark,
+    tabIconSelected: white,
   },
 };
