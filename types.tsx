@@ -3,9 +3,10 @@ export type RootStackParamList = {
   NotFound: undefined;
 };
 
-export type BottomTabParamList = {
-  TabOne: undefined;
-  TabTwo: undefined;
+export type MainTabParamList = {
+  FindWeebs: undefined;
+  Messages: undefined;
+  WeebFriends: undefined;
 };
 
 export type TabOneParamList = {
