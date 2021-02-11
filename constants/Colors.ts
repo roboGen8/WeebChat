@@ -1,10 +1,10 @@
-const gray = '#212124';
+const grey = '#212124';
 const white = '#fff';
 const green = '#7AC079';
 
 export default {
   nice_dark: {
-    background: gray
+    background: grey
   },
   nice_green: {
     background: green
@@ -12,13 +12,13 @@ export default {
   light: {
     text: green,
     background: white,
-    tint: gray,
+    tint: grey,
     tabIconDefault: '#ccc',
-    tabIconSelected: gray,
+    tabIconSelected: grey,
   },
   dark: {
     text: green,
-    background: gray,
+    background: grey,
     tint: white,
     tabIconDefault: '#ccc',
     tabIconSelected: white,
