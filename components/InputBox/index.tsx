@@ -10,12 +10,12 @@ const InputBox = () => {
     const [message, setMessage] = useState('');
 
     const onSendPress = () => {
-        console.log("send");
+        // console.log("send");
         setMessage('');
     }
 
     const onSmilePress = () => {
-        console.log("smile");
+        // console.log("smile");
     }
 
     const onPress = () => {
