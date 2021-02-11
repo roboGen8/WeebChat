@@ -32,6 +32,13 @@ export type MessageChannel = {
 
 export type ChatRoom = {
   id: String;
-  users: [User];
+  users: User[];
   lastMessage: MessageChannel;
+}
+
+export type Message = {
+  id: String;
+  users: User[];
+  lastMessage: Message;
+  user: User;
 }

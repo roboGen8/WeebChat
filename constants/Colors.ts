@@ -1,13 +1,21 @@
 const grey = '#212124';
 const white = '#fff';
 const green = '#7AC079';
+const chatMessageOther = '#fff';
+const chatMessageSelf = '#DCF8C5';
 
 export default {
   nice_dark: {
-    background: grey
+    color: grey
   },
   nice_green: {
-    background: green
+    color: green
+  },
+  chatMessageOther: {
+    color: chatMessageOther
+  },
+  chatMessageSelf: {
+    color: chatMessageSelf
   },
   light: {
     text: green,

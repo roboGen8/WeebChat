@@ -19,9 +19,9 @@ export default function MainTabNavigator() {
     <MainTab.Navigator
       initialRouteName="Messages"
       tabBarOptions={{
-        activeTintColor: Colors.nice_green.background,
+        activeTintColor: Colors.nice_green.color,
         style: {
-          backgroundColor: Colors.nice_dark.background,
+          backgroundColor: Colors.nice_dark.color,
         },
         
         indicatorStyle: {

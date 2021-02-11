@@ -10,6 +10,7 @@ import MainTabNavigator from './MainTabNavigator';
 import NotFoundScreen from '../screens/NotFoundScreen';
 import { RootStackParamList } from '../types';
 import { createStackNavigator } from '@react-navigation/stack';
+import ChatRoomScreen from '../screens/ChatRoomScreen';
 
 // If you are not familiar with React Navigation, we recommend going through the
 // "Fundamentals" guide: https://reactnavigation.org/docs/getting-started
@@ -35,7 +36,7 @@ function RootNavigator() {
         shadowOpacity: 0,
         elevation: 0,
       },
-      headerTintColor: Colors.nice_green.background,
+      headerTintColor: Colors.nice_green.color,
       headerTitleAlign: "left",
       headerTitleStyle: {
         fontWeight: "bold"
@@ -54,11 +55,27 @@ function RootNavigator() {
             justifyContent: 'space-between',
             marginRight: 10,
           }}>
-             <Octicons name="search" size={22} color={Colors.nice_green.background} />
-             <MaterialCommunityIcons name="dots-vertical" size={22} color={Colors.nice_green.background} />
+             <Octicons name="search" size={22} color={Colors.nice_green.color} />
+             <MaterialCommunityIcons name="dots-vertical" size={22} color={Colors.nice_green.color} />
            </View>
           )
         }}
+       />
+       <Stack.Screen 
+        name="ChatRoom"
+        component={ChatRoomScreen}
+        options={({route}) => ({
+          title: route.params.name,
+          headerRight: () => (
+            <View style={{
+              flexDirection: 'row',
+              justifyContent: 'space-between',
+              marginRight: 10,
+            }}>
+               <MaterialCommunityIcons name="dots-vertical" size={22} color={Colors.nice_green.color} />
+             </View>
+            )
+        })}
        />
       <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
     </Stack.Navigator>
