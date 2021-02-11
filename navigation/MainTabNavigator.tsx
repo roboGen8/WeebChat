@@ -5,7 +5,7 @@ import { ChatParamList, MainTabParamList, TabOneParamList } from '../types';
 import ChatScreen from '../screens/ChatScreen';
 // import ChatsScreen from '../screens/ChatsScreen';
 import Colors from '../constants/Colors';
-import { Fontisto } from "@expo/vector-icons";
+// import { Fontisto } from "@expo/vector-icons";
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import useColorScheme from '../hooks/useColorScheme';

@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-weebchat-dev-174025-authRole",
+      "UnauthRoleArn": "arn:aws:iam::036437964892:role/amplify-weebchat-dev-174025-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::036437964892:role/amplify-weebchat-dev-174025-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-weebchat-dev-174025-deployment",
+      "UnauthRoleName": "amplify-weebchat-dev-174025-unauthRole",
+      "StackName": "amplify-weebchat-dev-174025",
+      "StackId": "arn:aws:cloudformation:us-east-1:036437964892:stack/amplify-weebchat-dev-174025/2479efe0-6cba-11eb-9497-0a3238f55eb3",
+      "AmplifyAppId": "dfiz1edqs5ch0"
+    },
+    "categories": {
+      "auth": {
+        "weebchated7950bc": {}
+      }
+    }
+  }
+}
